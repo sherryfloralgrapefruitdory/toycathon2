@@ -5,7 +5,8 @@ class ThemePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(50),
+          
+          padding: EdgeInsets.all(50),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -28,7 +29,7 @@ class ThemePage extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
           ),
           const SizedBox(
             height: 20,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:seoul/toggle.dart';
 //import './male.dart';
 
-class MaleFig extends StatelessWidget {
+class FemaleFig extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +40,7 @@ class MaleFig extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+            SizedBox(
             height: 55,
           ),
           Align(
@@ -52,7 +52,7 @@ class MaleFig extends StatelessWidget {
                 image: DecorationImage(
                     fit: BoxFit.contain,
                     alignment: Alignment.center,
-                    image: AssetImage("assets/images/one.jpg")),
+                    image: AssetImage("assets/images/two.jpg")),
                 shape: BoxShape.circle,
                 color: Colors.white,
               ),
@@ -75,8 +75,10 @@ class MaleFig extends StatelessWidget {
             height: 50,
             width: 200,
             child: RaisedButton(
-               child: Text("select theme",
-                 style: TextStyle(fontSize: 15),),
+               child: Text("select theme", 
+               style: TextStyle(fontSize: 15),
+               ),
+               
               onPressed: (){
                Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) => ThemePage()));
